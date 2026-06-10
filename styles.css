@@ -19,6 +19,7 @@
   --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --nav-h: 64px; /* measured at runtime in script.js */
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -32,7 +33,15 @@ body {
   color: var(--ink);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
+  /* the nav is fixed (not sticky — iOS Safari leaves a gap above sticky
+     headers while its toolbar collapses), so reserve its height here */
+  padding-top: var(--nav-h);
 }
+
+a, button { -webkit-tap-highlight-color: transparent; }
+
+/* anchor jumps land below the fixed nav */
+section[id] { scroll-margin-top: calc(var(--nav-h) + 10px); }
 
 img { max-width: 100%; display: block; }
 
@@ -69,8 +78,10 @@ a:hover { color: var(--accent-dark); }
 
 /* ===== Nav ===== */
 .nav-wrap {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
   background: rgba(16, 21, 34, 0.82);
   backdrop-filter: blur(14px);
@@ -782,13 +793,28 @@ a:hover { color: var(--accent-dark); }
     left: 0;
     right: 0;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
+    align-items: stretch;
+    gap: 0;
     background: var(--navy-2);
-    padding: 12px 24px 20px;
+    padding: 6px 24px 18px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
   }
   .nav-links.is-open { display: flex; }
-  .nav-links a { display: block; padding: 10px 0; font-size: 1.05rem; }
-  .nav-cta { padding: 10px 20px; margin-top: 6px; }
+  .nav-links li { width: 100%; }
+  .nav-links li + li { border-top: 1px solid rgba(255, 255, 255, 0.06); }
+  .nav-links li:last-child { border-top: none; padding-top: 10px; }
+  .nav-links a:not(.nav-cta) {
+    display: block;
+    padding: 13px 0;
+    font-size: 1rem;
+    background: none;
+  }
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 26px;
+    margin-top: 0;
+  }
 }

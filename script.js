@@ -22,8 +22,15 @@ navLinks.addEventListener("click", (e) => {
   }
 });
 
-/* ---------- Nav: elevated state on scroll ---------- */
+/* ---------- Nav: fixed-position height + elevated state on scroll ---------- */
 const navWrap = document.querySelector(".nav-wrap");
+
+// The nav is position:fixed, so body padding reserves its space; keep the
+// CSS variable in sync with the real rendered height.
+const setNavHeight = () =>
+  document.documentElement.style.setProperty("--nav-h", navWrap.offsetHeight + "px");
+setNavHeight();
+window.addEventListener("resize", setNavHeight);
 window.addEventListener(
   "scroll",
   () => navWrap.classList.toggle("is-scrolled", window.scrollY > 12),
