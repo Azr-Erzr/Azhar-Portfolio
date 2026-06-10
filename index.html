@@ -8,12 +8,15 @@
   <meta property="og:title" content="Azhar Moolla — Analyst & Builder">
   <meta property="og:description" content="Real estate analyst who ships software. Pro forma modeling, GIS, and three live web products.">
   <meta property="og:image" content="assets/img/wasfirst-home.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101522'/%3E%3Ctext x='30' y='44' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EA%3C/text%3E%3Ccircle cx='48' cy='44' r='5' fill='%232563eb'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
 
   <!-- ===== NAV ===== -->
   <header class="nav-wrap">
@@ -38,7 +41,7 @@
     <section class="hero">
       <div class="container hero-inner">
         <p class="hero-kicker reveal">Oshawa, Ontario · Open to relocation</p>
-        <h1 class="hero-title reveal">Azhar Moolla</h1>
+        <h1 class="hero-title reveal">Azhar Moolla<span class="title-dot">.</span></h1>
         <p class="hero-sub reveal">A real estate analyst who <em>ships software</em>. I build Excel-grade financial models by day and live web products by night — using modern tooling, scrappy infrastructure, and AI as a force multiplier.</p>
         <div class="hero-actions reveal">
           <a class="btn btn-primary" href="#projects">
@@ -64,10 +67,10 @@
       </div>
       <div class="hero-stats">
         <div class="container stats-grid">
-          <div class="stat reveal"><span class="stat-num">3</span><span class="stat-label">Live web products</span></div>
-          <div class="stat reveal"><span class="stat-num">$1.2B</span><span class="stat-label">Development pro forma modeled</span></div>
-          <div class="stat reveal"><span class="stat-num">$0/mo</span><span class="stat-label">Infra cost of the Rental Finder</span></div>
-          <div class="stat reveal"><span class="stat-num">1</span><span class="stat-label">Emilio Dio Award for Studio Excellence</span></div>
+          <div class="stat reveal"><span class="stat-num" data-value="3">3</span><span class="stat-label">Live web products</span></div>
+          <div class="stat reveal"><span class="stat-num" data-prefix="$" data-value="1.2" data-decimals="1" data-suffix="B">$1.2B</span><span class="stat-label">Development pro forma modeled</span></div>
+          <div class="stat reveal"><span class="stat-num" data-prefix="$" data-value="0" data-suffix="/mo">$0/mo</span><span class="stat-label">Infra cost of the Rental Finder</span></div>
+          <div class="stat reveal"><span class="stat-num" data-value="1">1</span><span class="stat-label">Emilio Dio Award for Studio Excellence</span></div>
         </div>
       </div>
     </section>
@@ -75,7 +78,7 @@
     <!-- ===== PROJECTS ===== -->
     <section id="projects" class="section">
       <div class="container">
-        <p class="section-kicker reveal">Featured Projects</p>
+        <p class="section-kicker reveal">01 · Featured Projects</p>
         <h2 class="section-title reveal">Three live sites, three different ideas about how software gets built.</h2>
         <p class="section-sub reveal">One full production app with payments and an AI pipeline. One product concept born from real-estate domain knowledge. One proof that a useful tool can cost nothing to run.</p>
 
@@ -160,7 +163,7 @@
     <!-- ===== ANALYST WORK ===== -->
     <section id="analyst-work" class="section section-alt">
       <div class="container">
-        <p class="section-kicker reveal">Analyst Work</p>
+        <p class="section-kicker reveal">02 · Analyst Work</p>
         <h2 class="section-title reveal">The numbers side: pro formas, scenario testing, and spatial analysis.</h2>
         <p class="section-sub reveal">Selected pages from my consulting and studio work — including the CreateTO financial feasibility study that won the Emilio Dio Award for Studio Excellence. Click any image to enlarge.</p>
         <div class="gallery">
@@ -207,7 +210,7 @@
     <!-- ===== EXPERIENCE ===== -->
     <section id="experience" class="section">
       <div class="container">
-        <p class="section-kicker reveal">Experience</p>
+        <p class="section-kicker reveal">03 · Experience</p>
         <h2 class="section-title reveal">Four placements, four sides of how cities get built and financed.</h2>
         <ol class="timeline">
           <li class="timeline-item reveal">
@@ -255,7 +258,7 @@
     <!-- ===== SKILLS ===== -->
     <section id="skills" class="section section-alt">
       <div class="container">
-        <p class="section-kicker reveal">Toolkit</p>
+        <p class="section-kicker reveal">04 · Toolkit</p>
         <h2 class="section-title reveal">One foot in the spreadsheet, one foot in the codebase.</h2>
         <div class="skills-grid">
           <div class="skill-card reveal">
@@ -317,7 +320,7 @@
     <!-- ===== CONTACT ===== -->
     <section id="contact" class="section contact">
       <div class="container contact-inner">
-        <p class="section-kicker reveal">Contact</p>
+        <p class="section-kicker reveal">05 · Contact</p>
         <h2 class="section-title reveal">Let's talk.</h2>
         <p class="section-sub reveal">Based in Oshawa, Ontario — open to relocation, and to roles across finance, development, analysis, and early-stage startups.</p>
         <div class="contact-actions reveal">
@@ -347,6 +350,7 @@
     <img src="" alt="">
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/motion@12/dist/motion.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
