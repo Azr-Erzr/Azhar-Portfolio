@@ -22,7 +22,7 @@ python -m http.server 8000
 
 ## Deploy (GitHub Pages — free)
 
-1. Create a repo (e.g. `azr-erzr.github.io` for a root domain, or any repo name for a subpath).
+1. Create a repo (e.g. `azharmoolla.github.io` for a root domain, or any repo name for a subpath).
 2. Push these files to `main`.
 3. Repo **Settings → Pages → Deploy from a branch → main / root**.
 4. Live in ~1 minute at `https://<username>.github.io/<repo>/`.
