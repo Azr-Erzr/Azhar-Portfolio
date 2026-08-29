@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Azhar Moolla — Portfolio</title>
-  <meta name="description" content="A look at my work — urban planning, real estate finance, data analysis, marketing, and four live web projects I built along the way.">
+  <meta name="description" content="A look at my work — urban planning, real estate finance, data analysis, marketing, and a handful of web projects I've built along the way.">
   <meta property="og:title" content="Azhar Moolla — Portfolio">
-  <meta property="og:description" content="A look at my work — urban planning, real estate finance, data analysis, marketing, and four live web projects I built along the way.">
+  <meta property="og:description" content="A look at my work — urban planning, real estate finance, data analysis, marketing, and a handful of web projects I've built along the way.">
   <meta property="og:image" content="assets/img/wasfirst-home.png">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101522'/%3E%3Ctext x='30' y='44' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EA%3C/text%3E%3Ccircle cx='48' cy='44' r='5' fill='%232563eb'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,7 @@
       <div class="container hero-inner">
         <p class="hero-kicker reveal">Oshawa, Ontario · Open to relocation</p>
         <h1 class="hero-title reveal">Azhar Moolla<span class="title-dot">.</span></h1>
-        <p class="hero-sub reveal">I work the whole stack of a problem — financial feasibility, urban planning, economic development, data analysis, marketing — and <em>when the right tool doesn't exist, I build it</em>. The four live products below started exactly that way.</p>
+        <p class="hero-sub reveal">I work the whole stack of a problem — financial feasibility, urban planning, economic development, data analysis, marketing — and <em>when the right tool doesn't exist, I build it</em>. The products below started exactly that way.</p>
         <div class="hero-actions reveal">
           <a class="btn btn-primary" href="#projects">
             See the live projects
@@ -67,7 +67,7 @@
       </div>
       <div class="hero-stats">
         <div class="container stats-grid">
-          <div class="stat reveal"><span class="stat-num" data-value="4">4</span><span class="stat-label">Live web products</span></div>
+          <div class="stat reveal"><span class="stat-num" data-value="5">5</span><span class="stat-label">Web products shipped</span></div>
           <div class="stat reveal"><span class="stat-num" data-prefix="$" data-value="1.2" data-decimals="1" data-suffix="B">$1.2B</span><span class="stat-label">Development pro forma modeled</span></div>
           <div class="stat reveal"><span class="stat-num" data-prefix="$" data-value="0" data-suffix="/mo">$0/mo</span><span class="stat-label">Infra cost of Home Finder</span></div>
           <div class="stat reveal"><span class="stat-num" data-value="1">1</span><span class="stat-label">Emilio Dio Award for Studio Excellence</span></div>
@@ -79,53 +79,28 @@
     <section id="projects" class="section">
       <div class="container">
         <p class="section-kicker reveal">01 · Featured Projects</p>
-        <h2 class="section-title reveal">Four live products. Four proofs that an idea can become something real.</h2>
-        <p class="section-sub reveal">One is an operated business with payments and an AI pipeline. One is a calendar product that untangles sports schedules across time zones. One turns real-estate domain knowledge into a marketplace. One shows a useful tool can cost nothing to run. Software is just the medium — the skill on display is taking something from concept to shipped, which travels to any field.</p>
+        <h2 class="section-title reveal">Things I've built and shipped — the live ones first.</h2>
+        <p class="section-sub reveal">One is a real-time multiplayer app with a clever fix for network latency. One turns real-estate domain knowledge into a marketplace. One proves a useful tool can cost nothing to run. Software is just the medium — the skill on display is taking something from concept to shipped, which travels to any field.</p>
 
-        <!-- WasFirst -->
+        <!-- DubDubDone -->
         <article class="project reveal">
-          <a class="project-media" href="https://wasfirst.app/" target="_blank" rel="noopener" aria-label="Visit wasfirst.app">
-            <img src="assets/img/wasfirst-home.png" alt="WasFirst homepage — 'See how early you really were' hero with a neon proof card" loading="lazy">
-            <span class="media-badge">wasfirst.app</span>
+          <a class="project-media" href="https://dubdubdone.com/" target="_blank" rel="noopener" aria-label="Visit dubdubdone.com">
+            <img src="assets/img/dubdubdone-home.png" alt="DubDubDone — neon 'Scene Performance Deck' with twin reel dials and an insert-scene dock" loading="lazy">
+            <span class="media-badge">dubdubdone.com</span>
           </a>
           <div class="project-body">
             <div class="project-tags">
-              <span class="tag tag-accent">Flagship · In production</span>
+              <span class="tag tag-accent">Flagship · Live</span>
             </div>
-            <h3>WasFirst</h3>
-            <p class="project-tagline">Prove you were there first.</p>
-            <p>Upload an old screenshot, receipt, ticket stub, or photo — WasFirst's AI pipeline identifies the clue, estimates when it was captured, and scores how early you were to an artist, a meme, a product. The result becomes a collectible share card, with 23 card designs across free and premium tiers.</p>
-            <p><strong>Why it's interesting:</strong> this isn't a demo — it's an operated business. Stripe checkout and webhooks, gift codes, admin tooling, account deletion flows, and 19 Supabase Edge Functions behind the scenes. The AI dating engine has its own evaluation harness: golden datasets, synthetic cases, and multi-lane promptfoo evals that gate changes before they ship.</p>
+            <h3>DubDubDone</h3>
+            <p class="project-tagline">Dub any scene with your friends.</p>
+            <p>Load a clip, grab a character, and everyone performs their lines together in one shared pass — then take the finished video away. It runs entirely in the browser with nothing to install: drop in any MP4 and it drafts the script for you by finding the speech, or load ready-made voice packs. Game modes run from straight dubbing to Karaoke, Radio Theatre, Chaos, and Telephone.</p>
+            <p><strong>Why it's interesting:</strong> the hard part of dubbing together isn't the dubbing — it's latency. Route voices through a call and every remote performer lands 100–300&nbsp;ms late. DubDubDone's fix is architectural: voices never cross the network during a take. The server says "go," every player plays and records <em>locally</em>, and takes upload afterward aligned to the scene timeline — so someone on a terrible connection sounds identical to the host. Add in-browser MP4 export by remuxing (seconds, no re-encode), a Cloudflare Workers + D1 backend serving site and API on one origin, and 400-plus tests, and it's a serious engineering build dressed up as a party game.</p>
             <ul class="project-stack">
-              <li>React 18</li><li>Three.js</li><li>Supabase</li><li>Postgres</li><li>Stripe</li><li>Cloudflare Pages</li><li>Playwright E2E</li><li>promptfoo evals</li>
+              <li>React 18</li><li>Motion</li><li>Cloudflare Workers</li><li>Cloudflare D1</li><li>MediaRecorder</li><li>mp4box.js</li><li>Playwright E2E</li>
             </ul>
             <div class="project-links">
-              <a class="btn btn-small btn-primary" href="https://wasfirst.app/" target="_blank" rel="noopener">Visit wasfirst.app
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Silbo Sports -->
-        <article class="project project-flip reveal">
-          <a class="project-media" href="https://silbosports.com/" target="_blank" rel="noopener" aria-label="Visit silbosports.com">
-            <img src="assets/img/silbosports-home.png" alt="Silbo Sports homepage — 'One schedule for every sport you follow' hero with multi-sport navigation and live fixtures" loading="lazy">
-            <span class="media-badge">silbosports.com</span>
-          </a>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-accent">Latest · Live</span>
-            </div>
-            <h3>Silbo Sports</h3>
-            <p class="project-tagline">Every game you follow, in one calendar.</p>
-            <p>Silbo Sports turns the scattered schedules of every team you follow — across sports, leagues, and time zones — into one clean calendar. Pick your teams, see every fixture in your local time, then push it straight into your phone's calendar as a live-updating feed, export it as a shareable poster, or drop it into Notes. World Cup 2026 is the live launch vertical; the data model already scales to F1, the NHL, NBA, tennis, golf, and custom community leagues.</p>
-            <p><strong>Why it's interesting:</strong> it's a deceptively deep build — live ICS calendar-feed generation, time-zone-correct scheduling with conflict detection, a paginated poster-export studio, and a per-sport theming system, all behind a polished React 19 front end. The Supabase backend (row-level security, provider sync, push and email notifications) is architected and checked in, with today's data persisting locally through an interface shaped 1:1 to that future API — so turning it on is a swap, not a rewrite. Deployed on Cloudflare.</p>
-            <ul class="project-stack">
-              <li>React 19</li><li>TypeScript</li><li>Tailwind v4</li><li>Framer Motion</li><li>Supabase</li><li>Cloudflare Workers</li><li>Vitest</li>
-            </ul>
-            <div class="project-links">
-              <a class="btn btn-small btn-primary" href="https://silbosports.com/" target="_blank" rel="noopener">Visit silbosports.com
+              <a class="btn btn-small btn-primary" href="https://dubdubdone.com/" target="_blank" rel="noopener">Visit dubdubdone.com
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               </a>
             </div>
@@ -133,7 +108,7 @@
         </article>
 
         <!-- Sel-Fi -->
-        <article class="project reveal">
+        <article class="project project-flip reveal">
           <a class="project-media" href="https://sel-fi.ca/" target="_blank" rel="noopener" aria-label="Visit sel-fi.ca">
             <img src="assets/img/selfi-home.png" alt="Sel-Fi homepage — 'Sell Direct. Save $30,000+ in Commissions' hero with search bar" loading="lazy">
             <span class="media-badge">sel-fi.ca</span>
@@ -158,7 +133,7 @@
         </article>
 
         <!-- Home Finder -->
-        <article class="project project-flip reveal">
+        <article class="project reveal">
           <a class="project-media" href="https://azharmoolla.github.io/oiart-rental-finder/" target="_blank" rel="noopener" aria-label="Visit Home Finder">
             <img src="assets/img/rentalfinder-home.png" alt="Home Finder — 'Find the right home, anywhere' dashboard with scored listings, stats, and filters" loading="lazy">
             <span class="media-badge">azharmoolla.github.io</span>
@@ -182,6 +157,40 @@
             </div>
           </div>
         </article>
+
+        <!-- Archived -->
+        <div class="archive reveal">
+          <div class="archive-head">
+            <h3>Archived</h3>
+            <p>Products no longer in active operation — kept here as part of the record. One is still viewable; one has been taken offline.</p>
+          </div>
+          <div class="archive-grid">
+            <article class="archive-card">
+              <div class="archive-thumb">
+                <img src="assets/img/wasfirst-home.png" alt="WasFirst homepage — 'See how early you really were'" loading="lazy">
+              </div>
+              <div class="archive-info">
+                <div class="archive-tags"><span class="tag">Archived · Viewable</span></div>
+                <h4>WasFirst</h4>
+                <p>Prove you were there first. An AI pipeline dated old screenshots, receipts, and ticket stubs, scored how early you were, and minted a collectible share card. It ran as a real operated business — Stripe payments, gift codes, 19 Supabase Edge Functions, and a promptfoo eval harness — before being retired.</p>
+                <a class="archive-link" href="https://wasfirst.app/" target="_blank" rel="noopener">View the archived site
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </article>
+            <article class="archive-card">
+              <div class="archive-thumb">
+                <img src="assets/img/silbosports-home.png" alt="Silbo Sports homepage — 'One schedule for every sport you follow'" loading="lazy">
+              </div>
+              <div class="archive-info">
+                <div class="archive-tags"><span class="tag">Archived · Offline</span></div>
+                <h4>Silbo Sports</h4>
+                <p>A multi-sport schedule planner: follow your teams, see every fixture in your local time, then push it into your phone's calendar as a live feed or a shareable poster. Built on React 19 and Cloudflare with World Cup 2026 as the launch vertical. The site has since been taken offline.</p>
+                <span class="archive-link is-disabled">No longer online</span>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
